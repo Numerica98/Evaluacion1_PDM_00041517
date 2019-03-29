@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Contador de productos"
         android:layout_gravity="center"
-        android:textSize="35dp"
+        android:textSize="@dimen/dimen_titulo"
         />
 
     <LinearLayout
@@ -37,12 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Producto 1"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"
                 android:text="0"/>
         </LinearLayout>
@@ -60,11 +62,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Producto 2"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto2"
                 android:layout_width="wrap_content"
+                android:textSize="@dimen/dimen_normal"
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textColor="@color/blanco"/>
@@ -83,12 +87,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Producto 3"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_normal"
                 android:text="0"
                 android:textColor="@color/blanco"/>
         </LinearLayout>
@@ -116,12 +122,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Producto 4"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_normal"
                 android:text="0"
                 android:textColor="@color/blanco"/>
         </LinearLayout>
@@ -139,12 +147,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Producto 5"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_normal"
                 android:text="0"
                 android:textColor="@color/blanco"/>
         </LinearLayout>
@@ -162,12 +172,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Producto 6"
+                android:textSize="@dimen/dimen_normal"
                 android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_normal"
                 android:text="0"
                 android:textColor="@color/blanco"/>
         </LinearLayout>
@@ -189,18 +201,22 @@
             android:orientation="vertical"
             android:gravity="center"
             android:layout_margin="@dimen/dimen_margin"
-            android:background="@color/colorPrimary">
+            android:background="@color/tono2">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 7" />
+                android:textSize="@dimen/dimen_normal"
+                android:text="Producto 7"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:textSize="@dimen/dimen_normal"
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
         <LinearLayout
@@ -210,18 +226,22 @@
             android:orientation="vertical"
             android:gravity="center"
             android:layout_margin="@dimen/dimen_margin"
-            android:background="@color/colorPrimary">
+            android:background="@color/tono3">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 8" />
+                android:text="Producto 8"
+                android:textSize="@dimen/dimen_normal"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0"
+                android:textSize="@dimen/dimen_normal"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
         <LinearLayout
@@ -231,18 +251,22 @@
             android:orientation="vertical"
             android:gravity="center"
             android:layout_margin="@dimen/dimen_margin"
-            android:background="@color/colorPrimary">
+            android:background="@color/tono1">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 9" />
+                android:textSize="@dimen/dimen_normal"
+                android:text="Producto 9"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:textSize="@dimen/dimen_normal"
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
 
@@ -254,19 +278,24 @@
         android:layout_height="wrap_content"
         android:text="Usuario"
         android:paddingTop="15dp"
-        android:layout_gravity="left"/>
+        android:layout_gravity="left"
+        android:textColor="@color/negro_princp"
+        android:textSize="@dimen/dimen_normal"/>
 
     <EditText
         android:id="@+id/edit_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe el usuario aqui"/>
+        android:hint="Escribe el usuario aqui"
+        android:textSize="@dimen/dimen_normal"/>
 
     <TextView
         android:id="@+id/text_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
+        android:textSize="@dimen/dimen_normal"
+        android:textColor="@color/negro_princp"
         android:layout_gravity="left"
         android:text="Correo Electrónico"/>
 
@@ -274,12 +303,15 @@
         android:id="@+id/edit_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="EScribe el correo aqui"/>
+        android:textSize="@dimen/dimen_normal"
+        android:hint="Escribe el correo aqui"/>
 
     <Button
         android:id="@+id/boton_enviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_margin"
+        android:textSize="@dimen/dimen_normal"
         android:text="Enviar"
         android:layout_gravity="center"/>
 

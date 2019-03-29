@@ -2,4 +2,5 @@
 <resources>
     <dimen name="dimen_margin">10dp</dimen>
     <dimen name="dimen_normal">20dp</dimen>
+    <dimen name="dimen_titulo">35dp</dimen>
 </resources>
