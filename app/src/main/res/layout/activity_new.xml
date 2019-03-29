@@ -4,26 +4,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".NewActivity">
 
     <TextView
-        android:id="@+id/titulo"
+        android:id="@+id/titulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contador de productos"
+        android:text="Factura"
         android:layout_gravity="center"
-        android:textSize="35dp"
-        />
+        android:textSize="35dp" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario: "/>
+
+        <TextView
+            android:id="@+id/usuario_ingresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@id/usuario"
+            android:layout_toRightOf="@id/usuario" />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo: "
+            android:layout_below="@id/usuario"/>
+
+        <TextView
+            android:id="@+id/correo_ingresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@id/correo"
+            android:layout_toRightOf="@id/correo" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total de productos: "
+            android:layout_below="@id/correo"/>
+
+        <TextView
+            android:id="@+id/total_productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@id/total"
+            android:layout_toRightOf="@id/total" />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalle de productos"/>
 
     <LinearLayout
-        android:id="@+id/LinearLayout1"
+        android:id="@+id/LinearLayoutv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto1"
+            android:id="@+id/LinearLayoutv2_Producto1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -37,14 +90,14 @@
                 android:text="Producto 1" />
 
             <TextView
-                android:id="@+id/contador_producto1"
+                android:id="@+id/total_producto1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto2"
+            android:id="@+id/LinearLayoutv2_Producto2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -57,14 +110,14 @@
                 android:text="Producto 2" />
 
             <TextView
-                android:id="@+id/contador_producto2"
+                android:id="@+id/total_producto2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto3"
+            android:id="@+id/LinearLayoutv2_Producto3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -77,29 +130,30 @@
                 android:text="Producto 3" />
 
             <TextView
-                android:id="@+id/contador_producto3"
+                android:id="@+id/total_producto3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout2"
+        android:id="@+id/LinearLayoutv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto4"
+            android:id="@+id/LinearLayoutv2_Producto4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorPrimary"
+            android:layout_margin="@dimen/dimen_margin">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -107,14 +161,14 @@
                 android:text="Producto 4" />
 
             <TextView
-                android:id="@+id/contador_producto4"
+                android:id="@+id/total_producto4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto5"
+            android:id="@+id/LinearLayoutv2_Producto5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -127,14 +181,14 @@
                 android:text="Producto 5" />
 
             <TextView
-                android:id="@+id/contador_producto5"
+                android:id="@+id/total_producto5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto6"
+            android:id="@+id/LinearLayoutv2_Producto6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -147,29 +201,30 @@
                 android:text="Producto 6" />
 
             <TextView
-                android:id="@+id/contador_producto6"
+                android:id="@+id/total_producto6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout3"
+        android:id="@+id/LinearLayoutv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto7"
+            android:id="@+id/LinearLayoutv2_Producto7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorPrimary"
+            android:layout_margin="@dimen/dimen_margin">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -177,14 +232,14 @@
                 android:text="Producto 7" />
 
             <TextView
-                android:id="@+id/contador_producto7"
+                android:id="@+id/total_producto7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto8"
+            android:id="@+id/LinearLayoutv2_Producto8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -197,14 +252,14 @@
                 android:text="Producto 8" />
 
             <TextView
-                android:id="@+id/contador_producto8"
+                android:id="@+id/total_producto8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LinearLayout_Producto9"
+            android:id="@+id/LinearLayoutv2_Producto9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -217,44 +272,19 @@
                 android:text="Producto 9" />
 
             <TextView
-                android:id="@+id/contador_producto9"
+                android:id="@+id/total_producto9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text=""/>
         </LinearLayout>
-
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/text_usuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Usuario"/>
-
-    <EditText
-        android:id="@+id/edit_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Escribe el usuario aqui"/>
-
-    <TextView
-        android:id="@+id/text_correo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Correo Electrónico"/>
-
-    <EditText
-        android:id="@+id/edit_correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="EScribe el correo aqui"/>
-
     <Button
-        android:id="@+id/boton_enviar"
+        android:id="@+id/boton_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"
+        android:text="Share"
         android:layout_gravity="center"/>
 
 </LinearLayout>
