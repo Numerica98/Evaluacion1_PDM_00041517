@@ -116,6 +116,7 @@
                 android:id="@+id/total_producto1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blanco"
                 android:textSize="@dimen/dimen_normal"
                 android:text=""/>
         </LinearLayout>
