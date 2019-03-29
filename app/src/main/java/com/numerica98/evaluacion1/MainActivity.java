@@ -128,16 +128,16 @@ public class MainActivity extends AppCompatActivity {
 
                 m_intent.putExtra(AppConstans.USER_KEY,editUsuario.getText().toString());
                 m_intent.putExtra(AppConstans.CORREO_KEY,editCorreo.getText().toString());
-                m_intent.putExtra(AppConstans.PRODUCTOS_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO1_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO2_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO3_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO4_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO5_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO6_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO7_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO8_KEY,total);
-                m_intent.putExtra(AppConstans.PRODUCTO9_KEY,total);
+                m_intent.putExtra(AppConstans.PRODUCTOS_KEY,total+"");
+                m_intent.putExtra(AppConstans.PRODUCTO1_KEY,contador1+"");
+                m_intent.putExtra(AppConstans.PRODUCTO2_KEY,contador2+"");
+                m_intent.putExtra(AppConstans.PRODUCTO3_KEY,contador3+"");
+                m_intent.putExtra(AppConstans.PRODUCTO4_KEY,contador4+"");
+                m_intent.putExtra(AppConstans.PRODUCTO5_KEY,contador5+"");
+                m_intent.putExtra(AppConstans.PRODUCTO6_KEY,contador6+"");
+                m_intent.putExtra(AppConstans.PRODUCTO7_KEY,contador7+"");
+                m_intent.putExtra(AppConstans.PRODUCTO8_KEY,contador8+"");
+                m_intent.putExtra(AppConstans.PRODUCTO9_KEY,contador9+"");
 
                 startActivity(m_intent);
 

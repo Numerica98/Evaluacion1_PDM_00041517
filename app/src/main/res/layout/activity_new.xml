@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".NewActivity">
 
     <TextView
@@ -22,13 +23,15 @@
             android:id="@+id/usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario: "/>
+            android:text="Usuario: "
+            android:textSize="@dimen/dimen_normal"/>
 
         <TextView
             android:id="@+id/usuario_ingresado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            android:textSize="@dimen/dimen_normal"
             android:layout_toEndOf="@id/usuario"
             android:layout_toRightOf="@id/usuario" />
 
@@ -37,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Correo: "
+            android:textSize="@dimen/dimen_normal"
             android:layout_below="@id/usuario"/>
 
         <TextView
@@ -44,14 +48,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            android:textSize="@dimen/dimen_normal"
             android:layout_toEndOf="@id/correo"
-            android:layout_toRightOf="@id/correo" />
+            android:layout_toRightOf="@id/correo"
+            android:layout_alignBaseline="@id/correo"/>
 
         <TextView
             android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total de productos: "
+            android:textSize="@dimen/dimen_normal"
             android:layout_below="@id/correo"/>
 
         <TextView
@@ -59,14 +66,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            android:textSize="@dimen/dimen_normal"
             android:layout_toEndOf="@id/total"
-            android:layout_toRightOf="@id/total" />
+            android:layout_toRightOf="@id/total"
+            android:layout_alignBaseline="@id/total"/>
     </RelativeLayout>
     
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detalle de productos"/>
+        android:text="Detalle de productos"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"/>
 
     <LinearLayout
         android:id="@+id/LinearLayoutv1"
@@ -102,6 +114,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -122,6 +135,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -173,6 +187,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -193,6 +208,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -244,6 +260,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -264,6 +281,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView

@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="negro_princp">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="tono1">#0c56a0</color>
+    <color name="tono2">#1166bb</color>
+    <color name="tono3">#1777d7</color>
 </resources>

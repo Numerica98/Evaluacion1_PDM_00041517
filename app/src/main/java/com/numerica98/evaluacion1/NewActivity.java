@@ -58,7 +58,8 @@ public class NewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent m_intent2= new Intent();
-                text_aux= usuario.getText()+"\n";
+                text_aux= usuario.getText()+"\n"+correo.getText()+"\n"+total.getText()+"\n"+t1.getText()+"\n"+t2.getText()+"\n"+t3.getText()+"\n"+t4.getText()+"\n"
+                +t5.getText()+"\n"+t6.getText()+"\n"+t7.getText()+"\n"+t8.getText()+"\n"+t9.getText();
                 m_intent2.setAction(Intent.ACTION_SEND);
                 m_intent2.setType("text/plain");
 

@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/titulo"
+        android:textColor="@color/negro_princp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contador de productos"
@@ -28,18 +30,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary"
+            android:background="@color/tono1"
             android:layout_margin="@dimen/dimen_margin">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 1" />
+                android:text="Producto 1"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blanco"
                 android:text="0"/>
         </LinearLayout>
 
@@ -49,18 +53,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:layout_margin="@dimen/dimen_margin"
+            android:background="@color/tono2">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 2" />
+                android:text="Producto 2"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
         <LinearLayout
@@ -69,18 +76,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:layout_margin="@dimen/dimen_margin"
+            android:background="@color/tono3">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 3" />
+                android:text="Producto 3"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
 
@@ -99,18 +109,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:layout_margin="@dimen/dimen_margin"
+            android:background="@color/tono3">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 4" />
+                android:text="Producto 4"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
         <LinearLayout
@@ -119,18 +132,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:layout_margin="@dimen/dimen_margin"
+            android:background="@color/tono1">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 5" />
+                android:text="Producto 5"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
         <LinearLayout
@@ -139,18 +155,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:background="@color/colorPrimary">
+            android:layout_margin="@dimen/dimen_margin"
+            android:background="@color/tono2">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Producto 6" />
+                android:text="Producto 6"
+                android:textColor="@color/blanco"/>
 
             <TextView
                 android:id="@+id/contador_producto6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0"
+                android:textColor="@color/blanco"/>
         </LinearLayout>
 
 
@@ -169,6 +188,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -189,6 +209,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -209,6 +230,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
+            android:layout_margin="@dimen/dimen_margin"
             android:background="@color/colorPrimary">
 
             <TextView
@@ -230,7 +252,9 @@
         android:id="@+id/text_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario"/>
+        android:text="Usuario"
+        android:paddingTop="15dp"
+        android:layout_gravity="left"/>
 
     <EditText
         android:id="@+id/edit_usuario"
@@ -242,6 +266,8 @@
         android:id="@+id/text_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_gravity="left"
         android:text="Correo Electrónico"/>
 
     <EditText
